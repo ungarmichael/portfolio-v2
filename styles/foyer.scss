@@ -1,47 +1,30 @@
-
-
 @mixin center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.about-introbox{
-  // background-color: blue;
-  max-width: 1000px;
-
-}
-
-.about-greeting{
-  color: white;
-  font-size: 4em;
-  font-family: ZCOOL_QingKe_HuangYou;
-}
-
-
-
-.about-introduction{
-  color: white;
-  font-size: 4em;
-  font-family: ZCOOL_QingKe_HuangYou;
+.about-element{
+  height: 50px;
+  width: 50px;
 }
 
 .ug-foyer {
-  width: 100%;
+  width: 99%;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   .ug-foyer-intro {
+    overflow: hidden;
     height: 100vh;
     width: 100%;
     z-index: 0;
     position: relative;
+    // display: block;
     .ug-foyer-intro-about {
       position: absolute;
       color: rgba(255, 255, 255, 0.5);
-      font-family: ZCOOL_QingKe_HuangYou;
+      font-family: "ZCOOL QingKe HuangYou", cursive;
       font-size: 40px;
       display: inline-block;
       left: 50%;
@@ -56,23 +39,22 @@
     }
     #ug-foyer-box {
       position: absolute;
-      // background-color: brown;
       width: 50%;
       color: white;
       padding: 20px;
       display: inline-block;
       pointer-events: none;
       @include center();
-      .fullLogo{
+      .fullLogo {
         width: 100%;
         height: 200px;
       }
       .ug-foyer-text {
-        font-family: ZCOOL_QingKe_HuangYou;
+        font-family: "ZCOOL QingKe HuangYou", cursive;
         color: rgba(255, 255, 255, 0.75);
         position: relative;
-        width: 250px;
-        // background-color: green;
+        width: 300px;
+        margin: 10px;
         text-align: center;
         font-size: 2em;
         margin: 0 auto;
@@ -80,165 +62,67 @@
     }
   }
 }
+.about-readables {
+  width: 90%;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
 
-
-//--- WIDTH ---
-
-@media only screen and (max-width: 1200px) { 
-  .about-introbox{
-    width:90%;
+.about-introbox {
+  max-width: 1000px;
+  margin: 0px 20px;
+  // margin-left: 50px;
+  height: 300px;
+  // background-color: red;
+  .about-greeting {
+    color: white;
+    font-size: 3.4em;
+    font-family: "ZCOOL QingKe HuangYou", cursive;
   }
-  
-  .ug-foyer {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .ug-foyer-intro {
-      height: 100vh;
-      width: 100%;
-      z-index: 0;
-      position: relative;
-      .ug-foyer-intro-about {
-        position: absolute;
-        color: rgba(255, 255, 255, 0.5);
-        font-family: ZCOOL_QingKe_HuangYou;
-        font-size: 40px;
-        display: inline-block;
-        left: 50%;
-        transform: translateX(-50%);
-        top: calc(100% - 100px);
-        transition: font-size 1s, color 1s;
-        &:hover {
-          font-size: 60px;
-          color: rgba(255, 255, 255, 1);
-          cursor: pointer;
-        }
-      }
-      #ug-foyer-box {
-        position: absolute;
-        // background-color: brown;
-        width: 60%;
-        color: white;
-        padding: 20px;
-        display: inline-block;
-        pointer-events: none;
-        @include center();
-        .fullLogo{
-          width: 100%;
-          height: 30%;
-        }
-        .ug-foyer-text {
-          font-family: ZCOOL_QingKe_HuangYou;
-          color: rgba(255, 255, 255, 0.75);
-          position: relative;
-          width: 250px;
-          // background-color: green;
-          text-align: center;
-          font-size: 2em;
-          margin: 0 auto;
-        }
-      }
-    }
+  .about-introduction {
+    color: white;
+    font-size: 3.4em;
+    font-family: "ZCOOL QingKe HuangYou", cursive;
   }
 }
 
-
-
-
-@media only screen and (max-width: 600px) { 
-  .about-introbox{
-    width:80%;
-
-  }
-
-  .about-greeting{
-    font-size: 2em;
-  }
-
-  .about-introduction{
-    font-size: 2em;
-  }
-
-  .ug-foyer {
-    width: 600px;
-    position: absolute;
+.bottom-bar {
+  cursor: default;
+  position: relative;
+  margin: 0 auto;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  color: white;
+  .date {
+    margin: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .ug-foyer-intro {
-      height: 100vh;
-      width: 100%;
-      z-index: 0;
+    flex-direction: row;
+    .infinity {
+      font-size: 25px;
+      top: -13px;
+      left: 3px;
       position: relative;
-      .ug-foyer-intro-about {
-        position: absolute;
-        color: rgba(255, 255, 255, 0.5);
-        font-family: ZCOOL_QingKe_HuangYou;
-        font-size: 40px;
-        display: inline-block;
-        left: 50%;
-        transform: translateX(-50%);
-        top: calc(100% - 100px);
-        transition: font-size 1s, color 1s;
-        &:hover {
-          font-size: 60px;
-          color: rgba(255, 255, 255, 1);
-          cursor: pointer;
-        }
-      }
-      #ug-foyer-box {
-        position: absolute;
-        width: 50%;
-        color: white;
-        padding: 20px;
-        display: inline-block;
-        pointer-events: none;
-        @include center();
-        .fullLogo{
-          width: 100%;
-          height: 100px;
-        }
-        .ug-foyer-text {
-          font-family: ZCOOL_QingKe_HuangYou;
-          color: rgba(255, 255, 255, 0.75);
-          position: relative;
-          width: 60%;
-          // background-color: green;
-          font-size: 1em;
-          // margin: 0 auto;
-        }
-      }
     }
+  }
+  .legal {
+    margin: 10px;
   }
 }
 
-
-
-
-
-
-// @media only screen and (max-width: 300px) { 
+// @media only screen and (max-width: 1200px) {
+//   .about-introbox {
+//     width: 90%;
+//   }
 //   .ug-foyer {
-//     background-color: blue;
-//     width: 300px;
-//     position: absolute;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
 //     .ug-foyer-intro {
-//       height: 100vh;
-//       width: 100%;
-//       z-index: 0;
-//       position: relative;
 //       .ug-foyer-intro-about {
 //         position: absolute;
 //         color: rgba(255, 255, 255, 0.5);
-//         font-family: ZCOOL_QingKe_HuangYou;
+//         font-family: "ZCOOL QingKe HuangYou", cursive;
 //         font-size: 40px;
 //         display: inline-block;
 //         left: 50%;
@@ -253,147 +137,123 @@
 //       }
 //       #ug-foyer-box {
 //         position: absolute;
-//         width: 50%;
+//         // background-color: brown;
+//         width: 60%;
 //         color: white;
 //         padding: 20px;
 //         display: inline-block;
 //         pointer-events: none;
-//         background-color: red;
 //         @include center();
-//         .fullLogo{
+//         .fullLogo {
 //           width: 100%;
-//           height: 100px;
+//           height: 30%;
 //         }
 //         .ug-foyer-text {
-//           font-family: ZCOOL_QingKe_HuangYou;
+//           font-family: "ZCOOL QingKe HuangYou", cursive;
 //           color: rgba(255, 255, 255, 0.75);
 //           position: relative;
-//           width: 100%;
-//           // background-color: green;
-//           font-size: 1em;
-//           // margin: 0 auto;
+//           width: 250px;
+//           height: fit-content;
+//           background-color: green;
+//           text-align: center;
+//           margin: 10px auto;
 //         }
 //       }
 //     }
 //   }
 // }
 
+// @media only screen and (max-width: 600px) {
+//   .about-introbox {
+//     width: 80%;
+//   }
+//   .ug-foyer {
+//     width: 600px;
+//     .ug-foyer-intro {
+//       background-color: red;
+//       .ug-foyer-intro-about {
+//         position: absolute;
+//         color: rgba(255, 255, 255, 0.5);
+//         font-family: "ZCOOL QingKe HuangYou", cursive;
+//         // font-size: 40px;
+//         display: inline-block;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         top: calc(100% - 100px);
+//         transition: font-size 1s, color 1s;
+//         &:hover {
+//           font-size: 60px;
+//           color: rgba(255, 255, 255, 1);
+//           cursor: pointer;
+//         }
+//       }
+//       #ug-foyer-box {
+//         position: absolute;
+//         width: 100%;
+//         // background-color: green;
+//         color: white;
+//         padding: 20px;
+//         display: inline-block;
+//         pointer-events: none;
+//         @include center();
+//         .fullLogo {
+//           width: 90%;
+//           height: 90%;
+//           // @include center();
+//           margin: 0px auto;
+//           position: relative;
+//           left: 50%;
+//           transform: translateX(-50%);
+//           background-color: antiquewhite;
+//         }
+//         .ug-foyer-text {
+//           font-size: 2em;
+//         }
+//       }
+//     }
+//   }
+// }
 
-//--- HEIGHT ---
-
-@media only screen and (max-height: 500px) { 
-  .ug-foyer {
-    // background-color: purple;
-    // width: 100%;
-    // position: absolute;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    .ug-foyer-intro {
-      height: 500px;
-      // width: 100%;
-      // z-index: 0;
-      // position: relative;
-      .ug-foyer-intro-about {
-        // position: absolute;
-        // color: rgba(255, 255, 255, 0.5);
-        // font-family: ZCOOL_QingKe_HuangYou;
-        // font-size: 40px;
-        // display: inline-block;
-        // left: 50%;
-        // transform: translateX(-50%);
-        // top: calc(100% - 100px);
-        // transition: font-size 1s, color 1s;
-        // &:hover {
-        //   font-size: 60px;
-        //   color: rgba(255, 255, 255, 1);
-        //   cursor: pointer;
-        // }
-      }
-      #ug-foyer-box {
-        // position: absolute;
-        // width: 50%;
-        // color: white;
-        // padding: 20px;
-        // display: inline-block;
-        // pointer-events: none;
-        // background-color: red;
-        // left: 50%;
-        // transform: translateX(-50%);
-        // top: 30%;
-
-        .fullLogo{
-          // width: 100%;
-          // height: 100px;
-        }
-        .ug-foyer-text {
-          // font-family: ZCOOL_QingKe_HuangYou;
-          // color: rgba(255, 255, 255, 0.75);
-          // position: relative;
-          // width: 60%;
-          // // background-color: green;
-          // font-size: 1em;
-          // // margin: 0 auto;
-        }
-      }
-    }
-  }
-}
-
-
-@media screen and (min-height: 1500px) and (max-width: 1000px) { 
-  .ug-foyer {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .ug-foyer-intro {
-      height: 100vh;
-      width: 100%;
-      z-index: 0;
-      position: relative;
-      .ug-foyer-intro-about {
-        position: absolute;
-        color: rgba(255, 255, 255, 0.5);
-        font-family: ZCOOL_QingKe_HuangYou;
-        font-size: 40px;
-        display: inline-block;
-        left: 50%;
-        transform: translateX(-50%);
-        top: calc(100% - 400px);
-        transition: font-size 1s, color 1s;
-        &:hover {
-          font-size: 60px;
-          color: rgba(255, 255, 255, 1);
-          cursor: pointer;
-        }
-      }
-      #ug-foyer-box {
-        position: absolute;
-        width: 70%;
-        color: white;
-        padding: 20px;
-        display: inline-block;
-        pointer-events: none;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 30%;
-        .fullLogo{
-          width: 100%;
-          height: 200px;
-        }
-        .ug-foyer-text {
-          font-family: ZCOOL_QingKe_HuangYou;
-          color: rgba(255, 255, 255, 0.75);
-          position: relative;
-          width: 60%;
-          // background-color: green;
-          
-          // margin: 0 auto;
-        }
-      }
-    }
-  }
-}
+// @media screen and (min-height: 1500px) and (max-width: 1000px) {
+//   .ug-foyer {
+//     .ug-foyer-intro {
+//       .ug-foyer-intro-about {
+//         position: absolute;
+//         color: rgba(255, 255, 255, 0.5);
+//         font-family: ZCOOL_QingKe_HuangYou;
+//         font-size: 40px;
+//         display: inline-block;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         top: calc(100% - 400px);
+//         transition: font-size 1s, color 1s;
+//         &:hover {
+//           font-size: 60px;
+//           color: rgba(255, 255, 255, 1);
+//           cursor: pointer;
+//         }
+//       }
+//       #ug-foyer-box {
+//         position: absolute;
+//         width: 70%;
+//         color: white;
+//         padding: 20px;
+//         display: inline-block;
+//         pointer-events: none;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         top: 30%;
+//         .fullLogo {
+//           width: 100%;
+//           height: 200px;
+//         }
+//         .ug-foyer-text {
+//           font-family: ZCOOL_QingKe_HuangYou;
+//           color: rgba(255, 255, 255, 0.75);
+//           position: relative;
+//           width: 60%;
+//         }
+//       }
+//     }
+//   }
+// }

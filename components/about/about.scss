@@ -1,10 +1,12 @@
 .ug-foyer-about {
   height: fit-content;
-  width: 1000px;
+  width: 100%;
+  position: relative;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+
   color: white;
   align-items: flex-start;
   margin: 50px 0px;
@@ -18,28 +20,29 @@
   }
 
   .about-heading-box{
-    font-family: 'ZCOOL_QingKe_HuangYou';
+    font-family: "ZCOOL QingKe HuangYou", cursive;
     width: 400px;
+    margin-left: 10px;
     // background-color: aqua;
   }
 
-  .ug-foyer-about-divider {
-    background-color:white;
-    position: relative;
-    width: 1.2px;
-    height: 90%;
-  }
+  // .ug-foyer-about-divider {
+  //   background-color:white;
+  //   position: relative;
+  //   width: 1.2px;
+  //   height: 90%;
+  // }
   .ug-foyer-about-description {
     flex: 3;
     // display: flex;
     // align-items: flex-start;
     // padding:20px;
     // justify-content: center;
-    
     text-align: left;
     // height: 100%;
-    font-family: 'ZCOOL_QingKe_HuangYou';
+    font-family: "ZCOOL QingKe HuangYou", cursive;
     font-size: 15px;
+    
     // background-color: red;
     margin: 20px;
     p {
@@ -76,7 +79,7 @@
   .ug-foyer-about {
     height: fit-content;
     flex-direction: column;
-    width: 80vw;
+    // width: 80vw;
     padding:5px;
     .ug-foyer-about-divider{
       height: 1px;
@@ -99,12 +102,15 @@
 
 @media only screen and (max-width: 700px) {
   .ug-foyer-about {
+    
     height: fit-content;
     flex-direction: column;
     position: relative;
     width: 80vw;
     padding:5px;
+    // background-color: #9d9d9d;
     .ug-foyer-about-divider{
+      margin: 0 0;
       height: 1px;
       width: 50%;
       margin: 10px;
@@ -112,7 +118,8 @@
     .ug-foyer-about-description{
       font-size: 20px;
       margin: 10px;
-      max-width: 200px;
+      // width: 
+      // max-width: 200px;
       width: 100%;
       position: relative;
     }

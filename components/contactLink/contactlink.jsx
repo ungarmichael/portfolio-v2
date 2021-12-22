@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import { animated as a, useSpring, useRef, config } from "react-spring";
 
+
+
 const UgLink = (props) => {
   const contactSpring = useSpring({
     to: { opacity: 1, marginLeft: "0px" },
     from: { opacity: 0, marginLeft: "-400px" },
     config: config.stable,
   });
+
+  
 
   const [linkColor, setLinkColor] = useState("rgba(255, 255, 255, 1)");
   const [hoverStatus, setHoverStatus] = useState(false);

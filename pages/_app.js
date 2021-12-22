@@ -9,7 +9,7 @@ import "../styles/login.scss";
 import "../styles/global.scss";
 import "../styles/variables.scss";
 import "../styles/font.scss";
-
+import "../styles/comingsoon.scss";
 
 import "./../components/about/about.scss";
 import "./../components/bar/bar.scss";
@@ -24,23 +24,28 @@ import "./../components/bottombar/bottombar.jsx";
 import { BlurProvider } from "../context/BlurContext.js";
 import { SearchProvider } from "../context/SearchContext.js";
 
-import Head from "next/head"
+import Head from "next/head";
 import UgBar from "./../components/bar/bar.jsx";
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <link rel="ungarlogo" href="/assets/Ungar_Website_Icon.ico"/>
+        <link rel="ungarlogo" href="/assets/Ungar_Website_Icon.ico" />
       </Head>
       <SearchProvider>
         <BlurProvider>
           <UgBar />
           <Component {...pageProps} />
-          
         </BlurProvider>
       </SearchProvider>
-
+      <style jsx>
+        {`
+          * {
+            font-family: "ZCOOL QingKe HuangYou", cursive;
+          }
+        `}
+      </style>
     </>
   );
 }

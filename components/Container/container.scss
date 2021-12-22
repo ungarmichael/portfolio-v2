@@ -56,7 +56,7 @@
 .ug-container-heading {
   --heading-font-size: 2em;
   // font-family: YanoneKaffeesatz-Bold;
-  font-family: ZCOOL_QingKe_HuangYou;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
   transition: font-size .3s ease-in-out;
   font-size: 2em;
   display: inline-block;
@@ -70,7 +70,7 @@
 .ug-container-small_description {
   --small_description-font-size: 1em;
   
-  font-family: ZCOOL_QingKe_HuangYou;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
   outline: none;
   transition: font-size .3s ease-in-out;
   font-size: 1em;
@@ -110,9 +110,9 @@
   display: none;
 }
 
-.container.show .innerBox {
-  // display: block;
-}
+// .container.show .innerBox {
+//   // display: block;
+// }
 
 a{
   text-decoration: none;

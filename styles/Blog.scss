@@ -2,7 +2,7 @@
 .loading{
   left: 50%;
   top: 50%;
-  font-family: "ZCOOL_QingKe_HuangYou";
+  font-family: "ZCOOL QingKe HuangYou", cursive;
   transform: translate(-50%,-50%);
   font-size: 3em;
   position: absolute;
@@ -27,7 +27,7 @@
     left: 50%;
     transform: translateX(-50%);
     // font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-    font-family: ZCOOL_QingKe_HuangYou;
+    font-family: "ZCOOL QingKe HuangYou", cursive;
     color: white;
     .Blog-Content-Heading {
       font-size: xx-large;
@@ -59,7 +59,7 @@
       margin: 10px 0px;
       .Blog-Nav-Middle {
         color: white;
-        font-family: "ZCOOL_QingKe_HuangYou";
+        font-family: "ZCOOL QingKe HuangYou", cursive;
         font-size: 30px;
       }
       .Blog-Nav-FullLogo {
@@ -72,14 +72,14 @@
         &:hover{
           cursor:pointer;
         }
-        font-family: "ZCOOL_QingKe_HuangYou";
+        font-family: "ZCOOL QingKe HuangYou", cursive;
         color: white;
-        border-radius: 15px;
+        // border-radius: 15px;
       }
       .Blog-Nav-Back {
         margin-left: 10%;
         padding: 10px 15px;
-        border-radius: 15px;
+        // border-radius: 15px;
       }
     }
     .Blog-Divider {
@@ -90,7 +90,7 @@
     a {
       color: white;
       text-shadow: 0px 0px 4px #000000;
-      font-family: ZCOOL_QingKe_HuangYou;
+      font-family: "ZCOOL QingKe HuangYou", cursive;
     }
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
       sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -115,7 +115,7 @@
     width: 300px;
     height: 300px;
     border: 2px solid white;
-    border-radius: 15px;
+    // border-radius: 15px;
     font-size: 1.4em;
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@
       // input{
       // }
       .alert-heading{
-        font-family: "ZCOOL_QingKe_HuangYou";
+        font-family: "ZCOOL QingKe HuangYou", cursive;
         color: white;
         display: flex;
         align-items: center;
@@ -158,10 +158,10 @@
           width: 85%;
           height: 50px;
           background-color: transparent;
-          border-radius: 15px;
+          // border-radius: 15px;
           border: 2px solid white;
           color: white;
-          font-family: "ZCOOL_QingKe_HuangYou";
+          font-family: "ZCOOL QingKe HuangYou", cursive;
           font-size: 20px;
           text-decoration: none;
           outline: none;         
@@ -172,7 +172,7 @@
       .alert-buttons {
         display: flex;
         align-items: stretch;
-        font-family: "ZCOOL_QingKe_HuangYou";
+        font-family: "ZCOOL QingKe HuangYou", cursive;
         width: 80%;
         // background-color: blanchedalmond;
         color: white;
@@ -184,10 +184,10 @@
         }
         .alert-ok {
           flex: 1;
-          font-family: "ZCOOL_QingKe_HuangYou";
+          font-family: "ZCOOL QingKe HuangYou", cursive;
           margin: 5px;
           border: 2px solid white;
-          border-radius: 10px;
+          // border-radius: 10px;
           padding: 3px;
           height: 40px;
           text-decoration: none !important;
@@ -202,10 +202,10 @@
         }
         .alert-contact {
           flex: 1;
-          font-family: "ZCOOL_QingKe_HuangYou";
+          font-family: "ZCOOL QingKe HuangYou", cursive;
           margin: 5px;
           border: 2px solid white;
-          border-radius: 10px;
+          // border-radius: 10px;
           padding: 3px;
           color: white;
           a{
@@ -282,7 +282,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "ZCOOL_QingKe_HuangYou";
+  font-family: "ZCOOL QingKe HuangYou", cursive;
   p{
     display: flex;
     justify-content: center;
@@ -290,10 +290,10 @@
     align-items: center;
   }
   button{
-    font-family: "ZCOOL_QingKe_HuangYou";
+    font-family: "ZCOOL QingKe HuangYou", cursive;
     margin: 5px;
     border: 2px solid white;
-    border-radius: 10px;
+    // border-radius: 10px;
     padding: 3px;
     height: 40px;
     margin: 15px;

@@ -10,6 +10,8 @@ class UngarDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+          <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet"/>
           <link rel="shortcut icon" href="/assets/Ungar_Website_Icon.ico" />
         </Head>
         <body>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <rect x="-16.741" y="143.974" width="1046.12" height="723.612"/>
+    <g transform="matrix(1,0,0,1,-50.5307,-23.3298)">
+        <g transform="matrix(1.11565,0,0,1.17905,-84.3472,-101.862)">
+            <path d="M872.206,326.988L977.456,410.713" style="fill:none;stroke:white;stroke-width:19.97px;"/>
+        </g>
+        <g transform="matrix(1.11565,0,0,1.17905,-84.3472,-101.862)">
+            <path d="M160.672,326.988L265.922,410.713" style="fill:none;stroke:white;stroke-width:19.97px;"/>
+        </g>
+        <g transform="matrix(1.52871,0.298727,0.282665,1.38347,-634.858,-499.993)">
+            <path d="M872.206,673.012L938.469,730.059" style="fill:none;stroke:white;stroke-width:13.11px;"/>
+        </g>
+        <g transform="matrix(1.11565,0,0,1.17905,-62.6165,0.573109)">
+            <path d="M852.728,240.108L141.194,240.108L141.194,514.976C141.194,533.848 149.117,551.947 163.219,565.292C177.322,578.636 196.45,586.133 216.394,586.133L852.728,586.133L852.728,240.108Z" style="fill:none;stroke:white;stroke-width:19.97px;"/>
+        </g>
+        <g transform="matrix(1.11565,0,0,1.17905,54.8064,99.29)">
+            <path d="M852.728,240.108L141.194,240.108L141.194,514.976C141.194,533.848 149.117,551.947 163.219,565.292C177.322,578.636 196.45,586.133 216.394,586.133L852.728,586.133L852.728,240.108Z" style="fill:none;stroke:white;stroke-width:19.97px;"/>
+        </g>
+        <g transform="matrix(0.811273,0,0,0.811273,334.607,606.751)">
+            <text x="0px" y="0px" style="font-family:'ZCOOLQingKeHuangYou-Regular', 'ZCOOL QingKe HuangYou';font-size:312.755px;fill:white;">login</text>
+        </g>
+    </g>
+</svg>
